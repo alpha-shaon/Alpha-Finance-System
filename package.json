@@ -1,0 +1,14 @@
+{
+  "name": "alphaultimate-finance-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm --prefix backend install && npm --prefix frontend install",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\"",
+    "start-backend": "npm run dev --prefix backend",
+    "start-frontend": "npm run dev --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
